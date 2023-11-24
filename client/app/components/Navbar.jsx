@@ -8,7 +8,7 @@ import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 
 const Navbar = () => {
   return (
-    <div className='sticky top-0 flex justify-evenly bg-[#212122]'>
+    <div className='sticky top-0 flex justify-evenly bg-[#212122] z-40'>
       <div className='ml-12 flex w-1/3 items-center gap-6'>
         <div className='flex items-center gap-1'>
           <div className='text-sm font-extrabold text-white'>brands</div>

@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.slide-content.active {
+    transform: scale(0.8); /* Adjust the scaling factor as needed */
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+  }
