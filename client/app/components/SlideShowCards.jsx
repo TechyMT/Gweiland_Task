@@ -2,10 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 
 const SlideShowCards = ({ title, bck, logo }) => {
-  
   return (
     <div
-      className={`ml-16 h-36 w-80 overflow-hidden rounded-l-full rounded-r-3xl ${bck}`}
+      className={`textFont ml-16 w-[350px] overflow-hidden rounded-l-full rounded-r-3xl md:h-36 md:w-80 ${bck}`}
     >
       <div className='flex justify-between rounded-r-3xl'>
         <div className='flex justify-center'>
