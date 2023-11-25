@@ -15,7 +15,7 @@ export default function BrandsPopover({ title }) {
       {(popupState) => (
         <div>
           <Typography className='textFont' {...bindHover(popupState)}>
-            <button>{title}</button>
+            <button className='text-2xl'>{title}</button>
           </Typography>
           {/* <Button variant="contained" {...bindHover(popupState)}>
             Open Popover

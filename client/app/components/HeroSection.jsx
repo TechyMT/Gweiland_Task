@@ -60,10 +60,10 @@ const HeroSection = () => {
               translate: ['-70%', 0, 0],
             },
           }}
-          // autoplay={{
-          //   delay: 5000,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
           navigation={false} // Disable default navigation
           loop={true}
           speed={800}
