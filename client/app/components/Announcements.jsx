@@ -7,8 +7,12 @@ const Announcements = () => {
   }, []);
 
   return (
-    <div className='flex justify-center bg-[#E1C300] p-3 text-xs font-bold text-black'>
-      VISIT US ON TIKTOK @ <a href='https://bravaland.com'>BRAVALAND.COM</a>
+    <div className='mx-auto w-auto bg-[#E1C300] md:p-3 p-2 text-[10px] font-bold text-black md:text-xs'>
+      <div className='flex h-full flex-col items-center'>
+        <div className='mb-1 flex items-center justify-center'>
+          VISIT US ON TIKTOK @ <a href='https://bravaland.com'>BRAVALAND.COM</a>
+        </div>
+      </div>
     </div>
   );
 };

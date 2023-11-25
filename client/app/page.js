@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import HeroSection from './components/HeroSection';
 import Slide from './components/Slide';
-import SlideShowCards from './components/SlideShowCards';
+import Test from './components/Test';
+
 
 
 export default function Home()

@@ -5,19 +5,23 @@ import { Instagram, Twitter } from '@mui/icons-material';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import BrandsPopover from './BrandsPopover';
+import ShopPopover from './ShopPopover';
 
 const Navbar = () => {
   return (
-    <div className='sticky top-0 flex justify-evenly bg-[#212122] z-40'>
+    <div className='sticky top-0 z-40 flex justify-evenly bg-[#212122]'>
       <div className='ml-12 flex w-1/3 items-center gap-6'>
         <div className='flex items-center gap-1'>
-          <div className='text-sm font-extrabold text-white'>brands</div>
+          <div className='text-sm font-extrabold text-white'>
+            <BrandsPopover title='brands' />
+          </div>
           <span className='flex'>
             <KeyboardArrowDownOutlinedIcon className='w-4 text-white' />
           </span>
         </div>
         <div className='flex items-center gap-1'>
-          <div className='text-sm font-extrabold text-white'>shop</div>
+          <div className='text-sm font-extrabold text-white'><ShopPopover title = "shop"/></div>
           <span className='flex'>
             <KeyboardArrowDownOutlinedIcon className='w-4 text-white' />
           </span>
