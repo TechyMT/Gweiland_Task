@@ -11,6 +11,7 @@ import 'swiper/css/effect-creative';
 // import required modules
 import { Autoplay, EffectCreative, Navigation } from 'swiper/modules';
 import Image from 'next/image';
+import ImageText from './ImageText';
 
 // ... (previous imports)
 // ... (previous imports)
@@ -71,100 +72,59 @@ const HeroSection = () => {
           onSlideChange={(swiper) => handleSlideChange(swiper)}
         >
           <SwiperSlide key={1}>
-            <div className='flex h-full w-full  items-center justify-center'>
-              <div className='absolute h-full w-full bg-black opacity-20'></div>
+            <div className='flex items-center justify-center md:h-full md:w-full'>
+              <div className='absolute bg-black opacity-100 md:h-full md:w-full md:opacity-20'></div>
+
               <Image
-                className={`h-full w-full`}
+                className={`md:w-ful s scale-120 relative h-[50vh] object-cover md:h-full`}
                 src={`/Images/hero1.svg`}
                 width={1700}
                 height={1500}
                 alt={`hero1`}
               />
 
-              <div className='textFont absolute left-28 top-1/3 flex w-1/4 flex-col break-words text-7xl font-extrabold text-white'>
-                <div>heritage hoodies</div>
-                <div className='flex'>
-                  <a
-                    href='#_'
-                    class=' group relative mt-8 flex w-32 items-center justify-center overflow-hidden rounded-full bg-white p-4 text-sm font-light text-black'
-                  >
-                    <span class='absolute bottom-0 left-0 mb-0 flex h-0 w-full translate-y-0 transform bg-[#000000] opacity-90 transition-all duration-200 ease-out group-hover:h-full'></span>
-                    <span class='relative group-hover:text-white'>
-                      Shop Now
-                    </span>
-                  </a>
-                </div>
-              </div>
+              <ImageText title='heritage hoodies' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='flex h-full w-full  items-center justify-center'>
               <div className='absolute h-full w-full bg-black opacity-20'></div>
               <Image
-                className={`h-full w-full`}
+                className={`md:w-ful s scale-120 h-[50vh] object-cover md:h-full`}
                 src={`/Images/hero2.svg`}
                 width={1700}
                 height={1500}
                 alt={`hero2`}
               />
-
-              <div className='textFont absolute left-28 top-1/3 flex w-1/4 flex-col break-words text-7xl font-extrabold text-white'>
-                <div>premium zip hoodies</div>
-                <div className='flex'>
-                  <a
-                    href='#_'
-                    class=' group relative mt-8 flex w-32 items-center justify-center overflow-hidden rounded-full bg-white p-4 text-sm font-light text-black'
-                  >
-                    <span class='absolute bottom-0 left-0 mb-0 flex h-0 w-full translate-y-0 transform bg-[#000000] opacity-90 transition-all duration-200 ease-out group-hover:h-full'></span>
-                    <span class='relative group-hover:text-white'>
-                      Shop Now
-                    </span>
-                  </a>
-                </div>
-              </div>
+              <ImageText title='premium zip hoodies' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='flex h-full w-full  items-center justify-center'>
               <div className='absolute h-full w-full bg-black opacity-20'></div>
               <Image
-                className={`h-full w-full`}
+                className={`md:w-ful s scale-120 h-[50vh] object-cover md:h-full`}
                 src={`/Images/hero3.svg`}
                 width={1700}
                 height={1500}
                 alt={`hero2`}
               />
-
-              <div className='textFont absolute left-28 top-1/3 flex w-1/4 flex-col break-words text-7xl font-extrabold text-white'>
-                <div>premium tees</div>
-                <div className='flex'>
-                  <a
-                    href='#_'
-                    class=' group relative mt-8 flex w-32 items-center justify-center overflow-hidden rounded-full bg-white p-4 text-sm font-light text-black'
-                  >
-                    <span class='absolute bottom-0 left-0 mb-0 flex h-0 w-full translate-y-0 transform bg-[#000000] opacity-90 transition-all duration-200 ease-out group-hover:h-full'></span>
-                    <span class='relative group-hover:text-white'>
-                      Shop Now
-                    </span>
-                  </a>
-                </div>
-              </div>
+              <ImageText title='premium tees' />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className='flex h-full w-full  items-center justify-center'>
               <div className='absolute h-full w-full bg-black opacity-20'></div>
               <Image
-                className={`h-full w-full`}
+                className={`md:w-ful s scale-120 h-[50vh] object-cover md:h-full`}
                 src={`/Images/hero4.svg`}
                 width={1700}
                 height={1500}
                 alt={`hero3`}
               />
-
-              <div className='textFont absolute right-2 top-1/3 flex w-1/4 flex-col justify-end '>
-                <div className='flex break-words text-7xl font-extrabold text-white '>
-                  heritage women tanks
+              <div className='textFont absolute right-2 top-1/2 flex flex-col md:top-1/3 md:w-1/4 md:justify-end '>
+                <div className='flex break-words text-5xl font-bold text-white md:text-7xl md:font-extrabold '>
+                  heritage <br /> women's tanks
                 </div>
                 <div className='flex'>
                   <a
@@ -172,7 +132,7 @@ const HeroSection = () => {
                     class=' group relative mt-8 flex w-32 items-center justify-center overflow-hidden rounded-full bg-white p-4 text-sm font-light text-black'
                   >
                     <span class='absolute bottom-0 left-0 mb-0 flex h-0 w-full translate-y-0 transform bg-[#000000] opacity-90 transition-all duration-200 ease-out group-hover:h-full'></span>
-                    <span class='relative group-hover:text-white'>
+                    <span class='relative font-bold group-hover:text-white'>
                       Shop Now
                     </span>
                   </a>
@@ -184,14 +144,14 @@ const HeroSection = () => {
             <div className='flex h-full w-full  items-center justify-center'>
               <div className='absolute h-full w-full bg-black opacity-20'></div>
               <Image
-                className={`h-full w-full`}
+                className={`md:w-ful s scale-120 h-[50vh] object-cover md:h-full`}
                 src={`/Images/hero5.svg`}
                 width={1700}
                 height={1500}
                 alt={`hero4`}
               />
 
-              <div className='textFont absolute right-2 top-1/3 flex w-1/4 flex-col break-words text-7xl font-extrabold text-white'>
+              <div className='textFont absolute right-2 top-1/2 flex flex-col break-words text-5xl font-extrabold text-white md:right-2 md:top-1/3 md:w-1/4 md:text-7xl'>
                 <div>heritage tees</div>
                 <div className='flex'>
                   <a
