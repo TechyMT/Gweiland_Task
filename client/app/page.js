@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import HeroSection from './components/HeroSection';
-import Slide from './components/Slide';
+import Slide from './components/MarqueeSlide';
 import Test from './components/Test';
 
 
