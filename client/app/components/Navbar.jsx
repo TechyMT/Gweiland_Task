@@ -36,25 +36,25 @@ const Navbar = () => {
         <div className='flex justify-evenly'>
           <div className='ml-12 flex w-1/3 items-center gap-6'>
             <div className='flex items-center gap-1'>
-              <div className='text-sm font-extrabold text-white'>
+              <div className='text-sm font-extrabold text-white  hover:text-[#E1C300]'>
                 <BrandsPopover title='brands' />
               </div>
               <span className='flex'>
-                <KeyboardArrowDownOutlinedIcon className='w-4 text-white' />
+                <KeyboardArrowDownOutlinedIcon className='w-4 text-white hover:text-[#E1C300]' />
               </span>
             </div>
             <div className='flex items-center gap-1'>
-              <div className='text-sm font-extrabold text-white'>
+              <div className='text-sm font-extrabold text-white hover:text-[#E1C300]'>
                 <ShopPopover title='shop' />
               </div>
               <span className='flex'>
-                <KeyboardArrowDownOutlinedIcon className='w-4 text-white' />
+                <KeyboardArrowDownOutlinedIcon className='w-4 text-white hover:text-[#E1C300]' />
               </span>
             </div>
-            <div className='flex text-sm font-extrabold text-white'>
+            <div className='flex text-lg font-extrabold text-white hover:text-[#E1C300]'>
               premium
             </div>
-            <div className='flex text-sm font-extrabold text-white'>
+            <div className='flex text-lg font-extrabold text-white hover:text-[#E1C300]'>
               gift cards
             </div>
           </div>
@@ -69,23 +69,23 @@ const Navbar = () => {
           </div>
           <div className='ml-12 flex w-1/3 items-center gap-20'>
             <div className='ml-14 flex items-center gap-6'>
-              <div className='flex text-sm font-extrabold text-white'>
+              <div className='flex text-lg font-extrabold text-white hover:text-[#E1C300]'>
                 become an affiliate
               </div>
               <div className='flex gap-6'>
-                <div className='flex text-sm font-extrabold text-white'>
+                <div className='flex text-sm font-extrabold text-white hover:text-[#E1C300]'>
                   <Twitter />
                 </div>
-                <div className='flex text-sm font-extrabold text-white'>
+                <div className='flex text-sm font-extrabold text-white hover:text-[#E1C300]'>
                   <Instagram />
                 </div>
-                <div className='flex text-sm font-extrabold text-white'>
+                <div className='flex text-sm font-extrabold text-white hover:text-[#E1C300]'>
                   <PersonOutlineOutlinedIcon />
                 </div>
-                <div className='flex text-sm font-extrabold text-white'>
+                <div className='flex text-sm font-extrabold text-white hover:text-[#E1C300]'>
                   <SearchOutlinedIcon />
                 </div>
-                <div className='flex text-sm font-extrabold text-white'>
+                <div className='flex text-sm font-extrabold text-white hover:text-[#E1C300]'>
                   <ShoppingBagOutlinedIcon />
                 </div>
               </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
         <div className='fixed left-0 top-0 w-full bg-[#212122] lg:hidden'>
           <div className='flex items-center justify-between p-1'>
             <div
-              className='cursor-pointer text-white'
+              className='cursor-pointer text-white hover:text-[#E1C300]'
               onClick={toggleMobileNav}
             >
               {mobileNavOpen ? (
@@ -117,30 +117,30 @@ const Navbar = () => {
               />
             </div>
             <div className='flex gap-4'>
-              <SearchOutlinedIcon className='text-white' />
-              <ShoppingBagOutlinedIcon className='text-white' />
+              <SearchOutlinedIcon className='text-white hover:text-[#E1C300]' />
+              <ShoppingBagOutlinedIcon className='text-white hover:text-[#E1C300]' />
             </div>
           </div>
           {mobileNavOpen && (
-            <div className='ml-8 flex h-[100vh] flex-col items-start gap-12 text-white'>
+            <div className='ml-8 flex h-[100vh] flex-col items-start gap-12 text-white hover:text-[#E1C300]'>
               {/* Mobile Navbar links go here */}
               <div className='flex'>
                 <div>
                   <BrandsPopover title='brands' />
                 </div>
-                <div className='absolute right-8 flex items-center text-xl'>
+                <div className='absolute right-8 flex items-center text-xl hover:text-[#E1C300]'>
                   {'->'}
                 </div>
               </div>
               <div className='flex'>
                 <ShopPopover title='shop' />
-                <div className='absolute right-8 flex items-center text-xl'>
+                <div className='absolute right-8 flex items-center text-xl hover:text-[#E1C300]'>
                   {'->'}
                 </div>
               </div>
-              <div className='text-2xl'>premium</div>
-              <div className='text-2xl'>gift cards</div>
-              <div className='text-2xl'>become an affiliate</div>
+              <div className='text-2xl hover:text-[#E1C300]'>premium</div>
+              <div className='text-2xl hover:text-[#E1C300]'>gift cards</div>
+              <div className='text-2xl hover:text-[#E1C300]'>become an affiliate</div>
               {/* Add more mobile links as needed */}
               <div className='flex gap-4'>
                 <Twitter />
